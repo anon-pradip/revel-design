@@ -2,26 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  height: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Add this CSS to your global CSS file or component */
+::-webkit-scrollbar {
+  width: 0.5rem; /* Adjust the width as needed */
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+::-webkit-scrollbar-track {
+  background: transparent; /* Set the background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent; /* Set the background color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: transparent; /* Set the background color of the scrollbar thumb on hover */
 }
